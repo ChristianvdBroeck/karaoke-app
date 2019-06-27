@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { useState } from "react";
+import MainPage from './components/main-page';
+import Sing from './components/sing-page';
+import ListOfSongs from './components/songs';
+//import SearchResults from './components/search-results-page';
 
 function App() {
+
+  
+  // Renders interface:
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainPage/>,
+      <Sing/>
     </div>
   );
 }
