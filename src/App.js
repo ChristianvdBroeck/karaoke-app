@@ -3,8 +3,6 @@ import './App.css';
 import { useState } from "react";
 import MainPage from './components/main-page';
 import Sing from './components/sing-page';
-import ListOfSongs from './components/songs';
-//import SearchResults from './components/search-results-page';
 
 function App() {
 
@@ -13,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <MainPage/>,
-      <Sing/>
+      {/*<Sing/>*/}
     </div>
   );
 }
